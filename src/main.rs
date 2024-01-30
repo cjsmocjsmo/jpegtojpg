@@ -23,7 +23,7 @@ fn main() {
                 let new_fname = fname.replace(".jpeg", ".jpg");
                 println!("Renaming file: {}\n to\n {}", fname, new_fname);
                 // Uncomment the line below to actually rename the file
-                // std::fs::rename(&fname, &new_fname).unwrap();
+                std::fs::rename(&fname, &new_fname).unwrap();
             }
         }
     }
